@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nostra — Collections</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">Nostra</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="mobile-menu-toggle">☰</div>
+  </header>
+
+  <section class="collections-page">
+    <h2>Our Collections</h2>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products..." class="search-box"/>
+      <div class="filter-buttons">
+        <button onclick="filterProducts('all')" class="filter-btn">All</button>
+        <button onclick="filterProducts('men')" class="filter-btn">Men</button>
+        <button onclick="filterProducts('women')" class="filter-btn">Women</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productList">
+      <div class="product-card" data-category="men">
+        <img src="images/most wanted 1.jpg" alt="Men product"/>
+        <h3>Men T-Shirt</h3>
+      </div>
+      <div class="product-card" data-category="women">
+        <img src="images/most wanted 2.jpg" alt="Women product"/>
+        <h3>Women Dress</h3>
+      </div>
+     <div class="product-card" data-category="men">
+        <img src="images/new arrivals 2.jpg" alt="Men product"/>
+        <h3>Men T-Shirt</h3>
+      </div>
+      <div class="product-card" data-category="women">
+        <img src="images/New arrivals 1.jpg" alt="Women product"/>
+        <h3>Women Dress</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Join our News Letter</h2>
+    <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+
+    <input type="text" placeholder="Enter your email" class="newsletter-input">
+
+    <button class="newsletter-btn">
+        Subscribe →
+    </button>
+</section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Nostra. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
